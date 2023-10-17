@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Hotel Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Modern Hotel Reservation System</h1>
+    </header>
+    <div class="reservation-form">
+        <h2>Make a Reservation</h2>
+        <form action="reservation.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </div>
+    <div class="room-gallery">
+        <h2>Explore Our Rooms</h2>
+        <div class="room">
+            <img src="room1.jpg" alt="Room 1">
+            <p>Single Room</p>
+        </div>
+        <div class="room">
+            <img src="room2.jpg" alt="Room 2">
+            <p>Double Room</p>
+        </div>
+        <div class="room">
+            <img src="room3.jpg" alt="Room 3">
+            <p>Suite</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Modern Hotel Reservation System</p>
+    </footer>
+</body>
+</html>
